@@ -7,5 +7,5 @@ while(true) {
   
   fill(200 + random(30), 70 + random(30), 90 + random(10));
 
-  ellipse(random(width), random(height), random(20, 40));
+  ellipse(random(width), random(height), random(10, 20));
 }

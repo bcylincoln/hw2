@@ -22,21 +22,10 @@ function _y(num) {
 }
 
 function draw_rect(x, y, w, h, color) {
-	if ((random(2)) < 1) {
-		fill(38)
-		triangle(x+1, y+1, x + w + 1, y + 1, x + 1, y + h + 1);
-		triangle(x+w + 1, y+h + 1, x + w + 1, y + 1, x + 1, y + h + 1);
-		
-		fill(color.r, color.g, color.b);
-		triangle(x, y, x + w - 2, y - 2, x - 2, y + h - 2);
-		triangle(x+w , y+h , x + w + 2, y + 2, x + 2, y + h + 2);
-	} else {
-
-		fill(38)
-		rect(x+1, y+1, w, h);
-		fill(color.r, color.g, color.b);
-		rect(x, y, w, h);
-	}
+	fill(38)
+	rect(x+1, y+1, w, h);
+	fill(color.r, color.g, color.b);
+	rect(x, y, w, h);
 }
 
 function fill_area(x, y, w, h, color) {

@@ -73,7 +73,7 @@ function recurse(x, y, w, h, depth) {
 		}
 	} else {
 		var num_divs = Math.ceil(random(3));
-    if (random(2) < 1) {
+    if (w>h) {
 			for (var i = 0; i < num_divs; i++) {
       	recurse(x + (w/num_divs * i), y, w/num_divs, h, depth-1);
 			} 
@@ -85,6 +85,6 @@ function recurse(x, y, w, h, depth) {
 	}
 }
 
-recurse(0, 0, _width, _height, 3);
+recurse(0, 0, _width, _height, 4);
 
 

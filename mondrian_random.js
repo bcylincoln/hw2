@@ -66,7 +66,7 @@ function divide_area_horizontally(x, y, w, h, num_divs) {
 function recurse(x, y, w, h, depth) {
   
   if (depth == 0) {
-		if (random(2) < 1) {
+		if (w>h) {
 			divide_area_veritcally(x, y, w, h, Math.ceil(random(3)));
 		} else {
 			divide_area_horizontally(x, y, w, h, Math.ceil(random(3)));
